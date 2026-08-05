@@ -1,0 +1,46 @@
+*{
+    cursor:none;
+}
+
+.cursor{
+
+position:fixed;
+
+width:22px;
+height:22px;
+
+border:2px solid #D4AF37;
+
+border-radius:50%;
+
+transform:translate(-50%,-50%);
+
+pointer-events:none;
+
+z-index:999999;
+
+transition:
+width .2s,
+height .2s,
+transform .08s linear;
+
+background:rgba(212,175,55,.08);
+
+backdrop-filter:blur(4px);
+
+box-shadow:
+0 0 18px rgba(212,175,55,.35);
+
+}
+
+.cursor.hover{
+
+width:46px;
+height:46px;
+
+background:rgba(212,175,55,.18);
+
+box-shadow:
+0 0 35px rgba(212,175,55,.6);
+
+}

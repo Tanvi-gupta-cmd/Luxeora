@@ -1,0 +1,53 @@
+.marquee{
+
+width:100%;
+
+padding:22px 0;
+
+overflow:hidden;
+
+background:#2B211A;
+
+border-top:1px solid rgba(212,175,55,.2);
+
+border-bottom:1px solid rgba(212,175,55,.2);
+
+}
+
+.marquee-track{
+
+display:flex;
+
+width:max-content;
+
+animation:scroll 25s linear infinite;
+
+}
+
+.marquee-track span{
+
+font-size:15px;
+
+letter-spacing:4px;
+
+color:#E9CF84;
+
+margin-right:80px;
+
+white-space:nowrap;
+
+font-weight:500;
+
+}
+
+@keyframes scroll{
+
+from{
+transform:translateX(0);
+}
+
+to{
+transform:translateX(-50%);
+}
+
+}
